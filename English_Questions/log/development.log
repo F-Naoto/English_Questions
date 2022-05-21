@@ -879,3 +879,1580 @@ Processing by UsersController#show as HTML
 Completed 200 OK in 15ms (Views: 14.5ms | ActiveRecord: 0.0ms | Allocations: 4076)
 
 
+Started GET "/users/new" for ::1 at 2022-05-21 21:18:19 +0900
+Processing by UsersController#new as HTML
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/users_controller.rb:8:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 11.6ms | Allocations: 1350)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 38.0ms | Allocations: 4963)
+Completed 200 OK in 72ms (Views: 40.0ms | ActiveRecord: 1.2ms | Allocations: 9594)
+
+
+Started GET "/sessions/new" for ::1 at 2022-05-21 21:31:15 +0900
+  
+SyntaxError (/Users/fukudanaoto/original_app/English_Questions/English_Questions/app/controllers/sessions_controller.rb:10: else without rescue is useless
+  else 
+  ^~~~):
+  
+app/controllers/sessions_controller.rb:10: else without rescue is useless
+app/controllers/sessions_controller.rb:10: else without rescue is useless
+app/controllers/sessions_controller.rb:10: else without rescue is useless
+Started GET "/sessions/new" for ::1 at 2022-05-21 21:36:54 +0900
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 25.7ms | Allocations: 3520)
+  Rendered layout layouts/application.html.erb (Duration: 26.0ms | Allocations: 3590)
+Completed 500 Internal Server Error in 32ms (Allocations: 4616)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `sessoions_path' for #<ActionView::Base:0x007fcea6ff8670>
+Did you mean?  sessions_path
+               session_path):
+    1: <%=form_with(url:sessoions_path, session: :session, method: :post, local:true) do |f| %>
+    2: <%=f.label "メールアドレス" %>
+    3: <%=f.email_field :email %>
+    4: <%=f.label "パスワード" %>
+  
+app/views/sessions/new.html.erb:1
+Started GET "/sessions/new" for ::1 at 2022-05-21 21:37:17 +0900
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 3.5ms | Allocations: 2430)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 99.1ms | Allocations: 15253)
+Completed 200 OK in 105ms (Views: 103.1ms | Allocations: 16289)
+
+
+Started POST "/sessions" for ::1 at 2022-05-21 21:37:41 +0900
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"foobar@gmail.com", "password"=>"[FILTERED]", "commit"=>"新規登録"}
+Completed 500 Internal Server Error in 10ms (Allocations: 1776)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/sessions_controller.rb:4:in `create'
+Started GET "/sessions/new" for ::1 at 2022-05-21 21:38:01 +0900
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 2.3ms | Allocations: 2419)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 22.8ms | Allocations: 6204)
+Completed 200 OK in 47ms (Views: 44.8ms | Allocations: 7240)
+
+
+Started POST "/sessions" for ::1 at 2022-05-21 21:38:03 +0900
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"foobar@gmail.com", "password"=>"[FILTERED]", "commit"=>"ログイン"}
+Completed 500 Internal Server Error in 2ms (Allocations: 995)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/sessions_controller.rb:4:in `create'
+Started POST "/sessions" for ::1 at 2022-05-21 21:40:23 +0900
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"foobar@gmail.com", "password"=>"[FILTERED]", "commit"=>"ログイン"}
+Completed 500 Internal Server Error in 1ms (Allocations: 993)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/sessions_controller.rb:4:in `create'
+Started POST "/sessions" for ::1 at 2022-05-21 21:40:36 +0900
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"foobar@gmail.com", "password"=>"[FILTERED]", "commit"=>"ログイン"}
+Completed 500 Internal Server Error in 2ms (Allocations: 994)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/sessions_controller.rb:4:in `create'
+Started POST "/sessions" for ::1 at 2022-05-21 21:40:44 +0900
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"foobar@gmail.com", "password"=>"[FILTERED]", "commit"=>"ログイン"}
+Completed 500 Internal Server Error in 2ms (Allocations: 993)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/sessions_controller.rb:4:in `create'
+Started POST "/sessions" for ::1 at 2022-05-21 21:41:09 +0900
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"foobar@gmail.com", "password"=>"[FILTERED]", "commit"=>"ログイン"}
+Completed 500 Internal Server Error in 30ms (ActiveRecord: 0.0ms | Allocations: 2703)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/sessions_controller.rb:4:in `create'
+Started POST "/sessions" for ::1 at 2022-05-21 21:42:07 +0900
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"foobar@gmail.com", "password"=>"[FILTERED]", "commit"=>"ログイン"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 1067)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/sessions_controller.rb:4:in `create'
+Started POST "/sessions" for ::1 at 2022-05-21 21:42:56 +0900
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"foobar@gmail.com", "password"=>"[FILTERED]", "commit"=>"ログイン"}
+Completed 500 Internal Server Error in 5ms (Allocations: 1736)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/sessions_controller.rb:4:in `create'
+Started POST "/sessions" for ::1 at 2022-05-21 21:45:34 +0900
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"foobar@gmail.com", "password"=>"[FILTERED]", "commit"=>"ログイン"}
+Completed 500 Internal Server Error in 2ms (Allocations: 993)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/sessions_controller.rb:4:in `create'
+Started POST "/sessions" for ::1 at 2022-05-21 21:46:00 +0900
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"foobar@gmail.com", "password"=>"[FILTERED]", "commit"=>"ログイン"}
+Completed 500 Internal Server Error in 5ms (Allocations: 1691)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/sessions_controller.rb:4:in `create'
+Started POST "/sessions" for ::1 at 2022-05-21 21:46:11 +0900
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"foobar@gmail.com", "password"=>"[FILTERED]", "commit"=>"ログイン"}
+Started GET "/sessions" for ::1 at 2022-05-21 21:47:39 +0900
+Started GET "/sessions" for ::1 at 2022-05-21 21:47:39 +0900
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/sessions"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/sessions"):
+  
+Started GET "/sessions/new" for ::1 at 2022-05-21 21:47:45 +0900
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 27.3ms | Allocations: 4158)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 95.4ms | Allocations: 14178)
+Completed 200 OK in 123ms (Views: 101.4ms | ActiveRecord: 0.0ms | Allocations: 16171)
+
+
+Started POST "/sessions" for ::1 at 2022-05-21 21:47:52 +0900
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"foobar@gmail.com", "password"=>"[FILTERED]", "commit"=>"ログイン"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "foobar@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `create'
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 2.2ms | Allocations: 6339)
+
+
+  
+BCrypt::Errors::InvalidHash (invalid hash):
+  
+app/controllers/sessions_controller.rb:5:in `create'
+Started POST "/sessions" for ::1 at 2022-05-21 21:48:40 +0900
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"foobar@gmail.com", "password"=>"[FILTERED]", "commit"=>"ログイン"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/sessions_controller.rb:4:in `create'
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "foobar@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `create'
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 2.1ms | Allocations: 5730)
+
+
+  
+BCrypt::Errors::InvalidHash (invalid hash):
+  
+app/controllers/sessions_controller.rb:5:in `create'
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "users"[0m
+  [1m[35m (2.7ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar NOT NULL, "email" varchar NOT NULL, "password_digest" varchar NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (2.7ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (3.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20220520134421)[0m
+  [1m[35m (3.2ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (4.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2022-05-21 12:50:36.558507"], ["updated_at", "2022-05-21 12:50:36.558507"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (1.7ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "schema_sha1"], ["value", "f7d2badea14f761730d31f5b7c82696af573cf90"], ["created_at", "2022-05-21 12:50:36.613718"], ["updated_at", "2022-05-21 12:50:36.613718"]]
+  [1m[36mTRANSACTION (4.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "users"[0m
+  [1m[35m (6.2ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar NOT NULL, "email" varchar NOT NULL, "password_digest" varchar NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (6.5ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (3.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20220520134421)[0m
+  [1m[35m (1.5ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2022-05-21 12:50:36.650233"], ["updated_at", "2022-05-21 12:50:36.650233"]]
+  [1m[36mTRANSACTION (3.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Update (0.4ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = ?, "updated_at" = ? WHERE "ar_internal_metadata"."key" = ?[0m  [["value", "test"], ["updated_at", "2022-05-21 12:50:36.659457"], ["key", "environment"]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "schema_sha1"], ["value", "f7d2badea14f761730d31f5b7c82696af573cf90"], ["created_at", "2022-05-21 12:50:36.680870"], ["updated_at", "2022-05-21 12:50:36.680870"]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/users/new" for ::1 at 2022-05-21 21:50:47 +0900
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 9.0ms | Allocations: 1797)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 45.3ms | Allocations: 5633)
+Completed 200 OK in 52ms (Views: 49.3ms | ActiveRecord: 0.0ms | Allocations: 6567)
+
+
+Started POST "/users" for ::1 at 2022-05-21 21:50:58 +0900
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"name"=>"naot", "email"=>"foobar@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"新規登録"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Exists? (1.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "foobar@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1705)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.5ms | Allocations: 5608)
+Completed 200 OK in 265ms (Views: 11.3ms | ActiveRecord: 1.2ms | Allocations: 8800)
+
+
+Started POST "/users" for ::1 at 2022-05-21 21:51:15 +0900
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"name"=>"naot", "email"=>"foobar@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"新規登録"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "foobar@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1611)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.4ms | Allocations: 5495)
+Completed 200 OK in 270ms (Views: 9.8ms | ActiveRecord: 0.3ms | Allocations: 8339)
+
+
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+Started POST "/users" for ::1 at 2022-05-21 21:52:10 +0900
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"name"=>"naota", "email"=>"foobar@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"新規登録"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "foobar@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 4.8ms | Allocations: 1611)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 23.6ms | Allocations: 5500)
+Completed 200 OK in 371ms (Views: 24.3ms | ActiveRecord: 0.7ms | Allocations: 8327)
+
+
+Started POST "/users" for ::1 at 2022-05-21 21:53:05 +0900
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"name"=>"fukunao", "email"=>"new@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"新規登録"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "new@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "fukunao"], ["email", "new@gmail.com"], ["password_digest", "$2a$12$hcWLKDuCDDdiXaMF458wEeMSSLGR33V6aJx1a.qy9FlzU.4wH.aCi"], ["created_at", "2022-05-21 12:53:05.501098"], ["updated_at", "2022-05-21 12:53:05.501098"]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+Completed 500 Internal Server Error in 251ms (ActiveRecord: 0.7ms | Allocations: 3898)
+
+
+  
+ActiveRecord::StatementInvalid (SQLite3::ReadOnlyException: attempt to write a readonly database):
+  
+app/controllers/users_controller.rb:13:in `create'
+Started POST "/users" for ::1 at 2022-05-21 21:54:40 +0900
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"name"=>"fukunao", "email"=>"new@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"新規登録"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Exists? (1.9ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "new@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "fukunao"], ["email", "new@gmail.com"], ["password_digest", "$2a$12$EKmoaWmGGHtOhG/AFhMdd.hbF9FbvdvJEWrUIkgCbfIzH4BLqMU2y"], ["created_at", "2022-05-21 12:54:40.418710"], ["updated_at", "2022-05-21 12:54:40.418710"]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+Completed 500 Internal Server Error in 387ms (ActiveRecord: 2.6ms | Allocations: 3809)
+
+
+  
+ActiveRecord::StatementInvalid (SQLite3::ReadOnlyException: attempt to write a readonly database):
+  
+app/controllers/users_controller.rb:13:in `create'
+Started GET "/users" for ::1 at 2022-05-21 21:54:42 +0900
+  
+AbstractController::ActionNotFound (The action 'index' could not be found for UsersController):
+  
+actionpack (6.1.6) lib/abstract_controller/base.rb:160:in `process'
+actionview (6.1.6) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.1.6) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.6) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.6) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.6) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.6) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.6) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.6) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.6) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.1.6) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (6.1.6) lib/action_dispatch/http/content_security_policy.rb:19:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.1.6) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (6.1.6) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.6) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.6) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.6) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.6) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.6) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.6) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.6) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.6) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.6) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.6) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.6) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.6) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.6) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.6) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.6) lib/action_dispatch/middleware/host_authorization.rb:148:in `call'
+rack-mini-profiler (2.3.4) lib/mini_profiler/profiler.rb:268:in `call'
+webpacker (5.4.3) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.7.2) lib/rack/proxy.rb:67:in `call'
+railties (6.1.6) lib/rails/engine.rb:539:in `call'
+puma (5.6.4) lib/puma/configuration.rb:252:in `call'
+puma (5.6.4) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.4) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.4) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.4) lib/puma/server.rb:441:in `process_client'
+puma (5.6.4) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started POST "/users" for ::1 at 2022-05-21 21:54:55 +0900
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"name"=>"naota", "email"=>"hogehoge@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"新規登録"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "hogehoge@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Create (1.0ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "naota"], ["email", "hogehoge@gmail.com"], ["password_digest", "$2a$12$kwDjfHQQB5he6B7nWHsKXugmoAQAD5aV/7IhLAf91Ws0DRnZNSQha"], ["created_at", "2022-05-21 12:54:55.509470"], ["updated_at", "2022-05-21 12:54:55.509470"]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+Completed 500 Internal Server Error in 336ms (ActiveRecord: 1.3ms | Allocations: 3809)
+
+
+  
+ActiveRecord::StatementInvalid (SQLite3::ReadOnlyException: attempt to write a readonly database):
+  
+app/controllers/users_controller.rb:13:in `create'
+Started POST "/users" for ::1 at 2022-05-21 21:55:12 +0900
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"name"=>"naota", "email"=>"hogehoge@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"新規登録"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "hogehoge@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "naota"], ["email", "hogehoge@gmail.com"], ["password_digest", "$2a$12$n2yBP3zQ8AQvFTMv53FGNui0MMb/e4imf1TKrnbRU1qofeTFbrPEO"], ["created_at", "2022-05-21 12:55:12.967571"], ["updated_at", "2022-05-21 12:55:12.967571"]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+Completed 500 Internal Server Error in 277ms (ActiveRecord: 0.9ms | Allocations: 3812)
+
+
+  
+ActiveRecord::StatementInvalid (SQLite3::ReadOnlyException: attempt to write a readonly database):
+  
+app/controllers/users_controller.rb:13:in `create'
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.8ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started POST "/users" for ::1 at 2022-05-21 21:59:30 +0900
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"name"=>"naota", "email"=>"hogehoge@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"新規登録"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/users_controller.rb:12:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Exists? (1.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "hogehoge@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "naota"], ["email", "hogehoge@gmail.com"], ["password_digest", "$2a$12$orbt//8IVqJdXZhLJhiSVuNo.IzRSdq1lN90/r9Ws.gMg8msIA9G6"], ["created_at", "2022-05-21 12:59:31.071642"], ["updated_at", "2022-05-21 12:59:31.071642"]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 275ms (ActiveRecord: 4.3ms | Allocations: 7624)
+
+
+Started GET "/users/1" for ::1 at 2022-05-21 21:59:31 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 1.5ms | Allocations: 178)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 19.5ms | Allocations: 4063)
+Completed 200 OK in 22ms (Views: 20.4ms | ActiveRecord: 0.0ms | Allocations: 4706)
+
+
+Started GET "/sessions/new" for ::1 at 2022-05-21 22:00:02 +0900
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 3.1ms | Allocations: 2190)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.1ms | Allocations: 5940)
+Completed 200 OK in 14ms (Views: 13.4ms | ActiveRecord: 0.0ms | Allocations: 6458)
+
+
+Started POST "/sessions" for ::1 at 2022-05-21 22:00:11 +0900
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"hogehoge@gmail.com", "password"=>"[FILTERED]", "commit"=>"ログイン"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hogehoge@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `create'
+Completed 500 Internal Server Error in 297ms (ActiveRecord: 0.3ms | Allocations: 2929)
+
+
+  
+NoMethodError (undefined method `login' for #<SessionsController:0x007fccc61d96c0>):
+  
+app/controllers/sessions_controller.rb:6:in `create'
+Started POST "/sessions" for ::1 at 2022-05-21 22:01:14 +0900
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"hogehoge@gmail.com", "password"=>"[FILTERED]", "commit"=>"ログイン"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/sessions_controller.rb:4:in `create'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hogehoge@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `create'
+Redirected to http://localhost:3000/users/1
+Completed 500 Internal Server Error in 664ms (ActiveRecord: 2.5ms | Allocations: 6018)
+
+
+  
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  
+app/controllers/sessions_controller.rb:9:in `create'
+Started POST "/sessions" for ::1 at 2022-05-21 22:01:26 +0900
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"hogehoge@gmail.com", "password"=>"[FILTERED]", "commit"=>"ログイン"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hogehoge@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.3ms | Allocations: 2235)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 22.9ms | Allocations: 6045)
+Completed 200 OK in 277ms (Views: 23.8ms | ActiveRecord: 0.2ms | Allocations: 7049)
+
+
+Started POST "/sessions" for ::1 at 2022-05-21 22:01:38 +0900
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"hogehoge@gmail.com", "password"=>"[FILTERED]", "commit"=>"ログイン"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hogehoge@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `create'
+Redirected to http://localhost:3000/users/1
+Completed 500 Internal Server Error in 251ms (ActiveRecord: 0.2ms | Allocations: 1198)
+
+
+  
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  
+app/controllers/sessions_controller.rb:9:in `create'
+Started POST "/sessions" for ::1 at 2022-05-21 22:02:27 +0900
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"hogehoge@gmail.com", "password"=>"[FILTERED]", "commit"=>"ログイン"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/sessions_controller.rb:4:in `create'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hogehoge@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `create'
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 286ms (ActiveRecord: 1.3ms | Allocations: 5520)
+
+
+Started GET "/users/1" for ::1 at 2022-05-21 22:02:27 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 73)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.1ms | Allocations: 3958)
+Completed 200 OK in 10ms (Views: 8.9ms | ActiveRecord: 0.0ms | Allocations: 4477)
+
+
+Started GET "/users/1" for ::1 at 2022-05-21 22:11:40 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 1.0ms | Allocations: 254)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 19.8ms | Allocations: 4320)
+Completed 200 OK in 24ms (Views: 22.3ms | Allocations: 5450)
+
+
+Started POST "/sessions" for ::1 at 2022-05-21 22:11:44 +0900
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+Completed 500 Internal Server Error in 6ms (Allocations: 1715)
+
+
+  
+NoMethodError (undefined method `downcase' for nil:NilClass):
+  
+app/controllers/sessions_controller.rb:4:in `create'
+Started POST "/sessions" for ::1 at 2022-05-21 22:12:08 +0900
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+Completed 500 Internal Server Error in 3ms (Allocations: 995)
+
+
+  
+NoMethodError (undefined method `downcase' for nil:NilClass):
+  
+app/controllers/sessions_controller.rb:4:in `create'
+Started POST "/sessions" for ::1 at 2022-05-21 22:12:29 +0900
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+Completed 500 Internal Server Error in 2ms (Allocations: 994)
+
+
+  
+NoMethodError (undefined method `downcase' for nil:NilClass):
+  
+app/controllers/sessions_controller.rb:4:in `create'
+Started GET "/users/1" for ::1 at 2022-05-21 22:12:33 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 1.8ms | Allocations: 269)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 23.5ms | Allocations: 4356)
+Completed 200 OK in 35ms (Views: 32.4ms | Allocations: 5480)
+
+
+Started DELETE "/sessions/1" for ::1 at 2022-05-21 22:12:36 +0900
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"1"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/sessions_controller.rb:14:in `destroy'
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:14:in `destroy'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/helpers/sessions_helper.rb:18:in `logout'
+  [1m[36mUser Destroy (1.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 1]]
+  ↳ app/helpers/sessions_helper.rb:18:in `logout'
+  [1m[36mTRANSACTION (4.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/helpers/sessions_helper.rb:18:in `logout'
+No template found for SessionsController#destroy, rendering head :no_content
+Completed 204 No Content in 31ms (ActiveRecord: 7.1ms | Allocations: 6848)
+
+
+Started DELETE "/sessions/1" for ::1 at 2022-05-21 22:12:37 +0900
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:14:in `destroy'
+Completed 404 Not Found in 3ms (ActiveRecord: 0.2ms | Allocations: 1020)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=1):
+  
+app/controllers/sessions_controller.rb:14:in `destroy'
+Started DELETE "/sessions/1" for ::1 at 2022-05-21 22:12:46 +0900
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:14:in `destroy'
+Completed 404 Not Found in 21ms (ActiveRecord: 0.3ms | Allocations: 1019)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=1):
+  
+app/controllers/sessions_controller.rb:14:in `destroy'
+Started GET "/users/1" for ::1 at 2022-05-21 22:12:52 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 155)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.2ms | Allocations: 4037)
+Completed 200 OK in 12ms (Views: 10.9ms | ActiveRecord: 0.0ms | Allocations: 4413)
+
+
+Started DELETE "/sessions/1" for ::1 at 2022-05-21 22:24:03 +0900
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"1"}
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/sessions_controller.rb:14:in `destroy'
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:14:in `destroy'
+Completed 404 Not Found in 15ms (ActiveRecord: 1.3ms | Allocations: 2611)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=1):
+  
+app/controllers/sessions_controller.rb:14:in `destroy'
+Started DELETE "/sessions/1" for ::1 at 2022-05-21 22:24:23 +0900
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"1"}
+Completed 500 Internal Server Error in 6ms (Allocations: 2587)
+
+
+  
+NameError (undefined local variable or method `user' for #<SessionsController:0x007fccc63737d8>
+Did you mean?  super):
+  
+app/controllers/sessions_controller.rb:14:in `destroy'
+Started DELETE "/sessions/1" for ::1 at 2022-05-21 22:25:24 +0900
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"1"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (Allocations: 285)
+
+
+Started GET "/" for ::1 at 2022-05-21 22:25:25 +0900
+Processing by UsersController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 1.4ms | Allocations: 1020)
+  Rendered layout layouts/application.html.erb (Duration: 1.9ms | Allocations: 1090)
+Completed 500 Internal Server Error in 4ms (Allocations: 1586)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"destroy", :controller=>"sessions"}, missing required keys: [:id]):
+    1: <h1>一覧ページ</h1>
+    2: <%= link_to "ログアウト",session_path, method: :delete, class:"logout" %>
+    3: <%= link_to '新規作成', new_user_path, class: 'new_user' %>
+  
+app/views/users/show.html.erb:2
+Started GET "/" for ::1 at 2022-05-21 22:26:02 +0900
+Processing by UsersController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1139)
+  Rendered layout layouts/application.html.erb (Duration: 2.0ms | Allocations: 1209)
+Completed 500 Internal Server Error in 8ms (Allocations: 2308)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"destroy", :controller=>"sessions", :id=>nil}, missing required keys: [:id]):
+    1: <h1>一覧ページ</h1>
+    2: <%= link_to "ログアウト",session_path(@user), method: :delete, class:"logout" %>
+    3: <%= link_to '新規作成', new_user_path, class: 'new_user' %>
+  
+app/views/users/show.html.erb:2
+Started DELETE "/sessions/1" for ::1 at 2022-05-21 22:26:11 +0900
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"1"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (Allocations: 276)
+
+
+Started GET "/" for ::1 at 2022-05-21 22:26:11 +0900
+Processing by UsersController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 1022)
+  Rendered layout layouts/application.html.erb (Duration: 1.1ms | Allocations: 1092)
+Completed 500 Internal Server Error in 3ms (Allocations: 1446)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"destroy", :controller=>"sessions", :id=>nil}, missing required keys: [:id]):
+    1: <h1>一覧ページ</h1>
+    2: <%= link_to "ログアウト",session_path(@user), method: :delete, class:"logout" %>
+    3: <%= link_to '新規作成', new_user_path, class: 'new_user' %>
+  
+app/views/users/show.html.erb:2
+Started DELETE "/sessions/1" for ::1 at 2022-05-21 22:27:14 +0900
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"1"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (Allocations: 285)
+
+
+Started GET "/" for ::1 at 2022-05-21 22:27:15 +0900
+Processing by UsersController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 1025)
+  Rendered layout layouts/application.html.erb (Duration: 0.7ms | Allocations: 1095)
+Completed 500 Internal Server Error in 2ms (Allocations: 1590)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"destroy", :controller=>"sessions", :id=>nil}, missing required keys: [:id]):
+    1: <h1>一覧ページ</h1>
+    2: <%= link_to "ログアウト",session_path(@user), method: :delete, class:"logout" %>
+    3: <%= link_to '新規作成', new_user_path, class: 'new_user' %>
+  
+app/views/users/show.html.erb:2
+Started GET "/" for ::1 at 2022-05-21 22:27:41 +0900
+Processing by UsersController#show as HTML
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/users_controller.rb:4:in `show'
+Completed 404 Not Found in 8ms (ActiveRecord: 1.1ms | Allocations: 2038)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User without an ID):
+  
+app/controllers/users_controller.rb:4:in `show'
+Started DELETE "/sessions/1" for ::1 at 2022-05-21 22:28:52 +0900
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"1"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 282)
+
+
+Started GET "/" for ::1 at 2022-05-21 22:28:52 +0900
+Processing by UsersController#show as HTML
+Completed 404 Not Found in 1ms (ActiveRecord: 0.0ms | Allocations: 603)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User without an ID):
+  
+app/controllers/users_controller.rb:4:in `show'
+Started GET "/" for ::1 at 2022-05-21 22:29:18 +0900
+Processing by UsersController#show as HTML
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/users_controller.rb:4:in `show'
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 1026)
+  Rendered layout layouts/application.html.erb (Duration: 1.1ms | Allocations: 1096)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 2.5ms | Allocations: 3971)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"destroy", :controller=>"sessions", :id=>nil}, missing required keys: [:id]):
+    1: <h1>一覧ページ</h1>
+    2: <%= link_to "ログアウト",session_path(@user), method: :delete, class:"logout" %>
+    3: <%= link_to '新規作成', new_user_path, class: 'new_user' %>
+  
+app/views/users/show.html.erb:2
+Started GET "/" for ::1 at 2022-05-21 22:35:18 +0900
+Processing by UsersController#show as HTML
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/users_controller.rb:4:in `show'
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 1.4ms | Allocations: 1122)
+  Rendered layout layouts/application.html.erb (Duration: 1.8ms | Allocations: 1192)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 1.3ms | Allocations: 4393)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"destroy", :controller=>"sessions", :id=>nil}, missing required keys: [:id]):
+    1: <h1>一覧ページ</h1>
+    2: <%= link_to "ログアウト",session_path(@current_user), method: :delete, class:"logout" %>
+    3: <%= link_to '新規作成', new_user_path, class: 'new_user' %>
+  
+app/views/users/show.html.erb:2
+Started GET "/" for ::1 at 2022-05-21 22:36:52 +0900
+Processing by UsersController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 1005)
+  Rendered layout layouts/application.html.erb (Duration: 1.5ms | Allocations: 1075)
+Completed 500 Internal Server Error in 3ms (Allocations: 1573)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"destroy", :controller=>"sessions", :id=>nil}, missing required keys: [:id]):
+    1: <h1>一覧ページ</h1>
+    2: <%= link_to "ログアウト",session_path(@current_user), method: :delete, class:"logout" %>
+    3: <%= link_to '新規作成', new_user_path, class: 'new_user' %>
+  
+app/views/users/show.html.erb:2
+Started GET "/" for ::1 at 2022-05-21 22:37:11 +0900
+Processing by UsersController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1132)
+  Rendered layout layouts/application.html.erb (Duration: 2.0ms | Allocations: 1202)
+Completed 500 Internal Server Error in 8ms (Allocations: 2301)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"destroy", :controller=>"sessions"}, missing required keys: [:id]):
+    1: <h1>一覧ページ</h1>
+    2: <%= link_to "ログアウト",session_path, method: :delete, class:"logout" %>
+    3: <%= link_to '新規作成', new_user_path, class: 'new_user' %>
+  
+app/views/users/show.html.erb:2
+Started GET "/" for ::1 at 2022-05-21 22:37:46 +0900
+Processing by UsersController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1000)
+  Rendered layout layouts/application.html.erb (Duration: 2.1ms | Allocations: 1070)
+Completed 500 Internal Server Error in 4ms (Allocations: 1568)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"destroy", :controller=>"sessions"}, missing required keys: [:id]):
+    1: <h1>一覧ページ</h1>
+    2: <%= link_to "ログアウト",session_path, method: :delete, class:"logout" %>
+    3: <%= link_to '新規作成', new_user_path, class: 'new_user' %>
+  
+app/views/users/show.html.erb:2
+Started GET "/" for ::1 at 2022-05-21 22:39:26 +0900
+Processing by UsersController#show as HTML
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/users_controller.rb:4:in `show'
+Completed 404 Not Found in 9ms (ActiveRecord: 1.4ms | Allocations: 2006)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User without an ID):
+  
+app/controllers/users_controller.rb:4:in `show'
+Started GET "/users/1" for ::1 at 2022-05-21 22:39:43 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `show'
+Completed 404 Not Found in 25ms (ActiveRecord: 1.1ms | Allocations: 1618)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=1):
+  
+app/controllers/users_controller.rb:4:in `show'
+Started GET "/users/new" for ::1 at 2022-05-21 22:39:56 +0900
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 7.6ms | Allocations: 1599)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 36.5ms | Allocations: 5673)
+Completed 200 OK in 53ms (Views: 40.9ms | ActiveRecord: 0.0ms | Allocations: 9418)
+
+
+Started POST "/users" for ::1 at 2022-05-21 22:40:08 +0900
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"name"=>"foobar", "email"=>"foobar@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"新規登録"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) LIMIT ?[0m  [["email", "foobar@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "foobar"], ["email", "foobar@gmail.com"], ["password_digest", "$2a$12$gDfD0cb2QoaBm8w5PrDTued.MNoNuu.35JG0doAezGhyVGmdg6pr6"], ["created_at", "2022-05-21 13:40:09.139038"], ["updated_at", "2022-05-21 13:40:09.139038"]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+Redirected to http://localhost:3000/users/2
+Completed 302 Found in 296ms (ActiveRecord: 2.0ms | Allocations: 3032)
+
+
+Started GET "/users/2" for ::1 at 2022-05-21 22:40:09 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 1.2ms | Allocations: 247)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.0ms | Allocations: 4118)
+Completed 200 OK in 17ms (Views: 14.7ms | ActiveRecord: 0.2ms | Allocations: 5060)
+
+
+Started DELETE "/sessions/2" for ::1 at 2022-05-21 22:40:13 +0900
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"2"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 282)
+
+
+Started GET "/" for ::1 at 2022-05-21 22:40:13 +0900
+Processing by UsersController#show as HTML
+Completed 404 Not Found in 1ms (ActiveRecord: 0.0ms | Allocations: 603)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User without an ID):
+  
+app/controllers/users_controller.rb:4:in `show'
+Started GET "/users/2" for ::1 at 2022-05-21 22:40:31 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 127)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.4ms | Allocations: 4002)
+Completed 200 OK in 14ms (Views: 10.9ms | ActiveRecord: 0.3ms | Allocations: 4805)
+
+
+Started GET "/users/2" for ::1 at 2022-05-21 22:40:56 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 1.7ms | Allocations: 267)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 17.2ms | Allocations: 4347)
+Completed 200 OK in 27ms (Views: 22.7ms | ActiveRecord: 0.3ms | Allocations: 5897)
+
+
+Started DELETE "/sessions/2" for ::1 at 2022-05-21 22:41:03 +0900
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"2"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 276)
+
+
+Started GET "/" for ::1 at 2022-05-21 22:41:03 +0900
+Processing by UsersController#show as HTML
+Completed 404 Not Found in 1ms (ActiveRecord: 0.0ms | Allocations: 603)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User without an ID):
+  
+app/controllers/users_controller.rb:4:in `show'
+Started DELETE "/sessions/2" for ::1 at 2022-05-21 22:43:38 +0900
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"2"}
+Completed 500 Internal Server Error in 2ms (Allocations: 970)
+
+
+  
+NoMethodError (undefined method `session' for nil:NilClass):
+  
+app/helpers/sessions_helper.rb:16:in `logout'
+app/controllers/sessions_controller.rb:14:in `destroy'
+Started DELETE "/sessions/2" for ::1 at 2022-05-21 22:45:37 +0900
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"2"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/helpers/sessions_helper.rb:7:in `current_user'
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:7:in `current_user'
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 1.5ms | Allocations: 3335)
+
+
+  
+NoMethodError (undefined method `session' for nil:NilClass):
+  
+app/helpers/sessions_helper.rb:16:in `logout'
+app/controllers/sessions_controller.rb:14:in `destroy'
+Started DELETE "/sessions/2" for ::1 at 2022-05-21 22:46:22 +0900
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"2"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (Allocations: 285)
+
+
+Started GET "/" for ::1 at 2022-05-21 22:46:22 +0900
+Processing by UsersController#show as HTML
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/users_controller.rb:4:in `show'
+Completed 404 Not Found in 6ms (ActiveRecord: 1.0ms | Allocations: 2023)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User without an ID):
+  
+app/controllers/users_controller.rb:4:in `show'
+Started GET "/users/2" for ::1 at 2022-05-21 22:46:45 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 288)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 23.2ms | Allocations: 4370)
+Completed 200 OK in 38ms (Views: 26.9ms | ActiveRecord: 1.6ms | Allocations: 9181)
+
+
+Started DELETE "/sessions/2" for ::1 at 2022-05-21 22:46:47 +0900
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"2"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 276)
+
+
+Started GET "/" for ::1 at 2022-05-21 22:46:47 +0900
+Processing by UsersController#show as HTML
+Completed 404 Not Found in 1ms (ActiveRecord: 0.0ms | Allocations: 603)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User without an ID):
+  
+app/controllers/users_controller.rb:4:in `show'
+Started GET "/users/new" for ::1 at 2022-05-21 22:47:02 +0900
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 7.6ms | Allocations: 1598)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 21.1ms | Allocations: 5468)
+Completed 200 OK in 27ms (Views: 24.9ms | ActiveRecord: 0.0ms | Allocations: 5991)
+
+
+Started DELETE "/sessions/2" for ::1 at 2022-05-21 22:47:04 +0900
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"2"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 276)
+
+
+Started GET "/" for ::1 at 2022-05-21 22:47:04 +0900
+Processing by UsersController#show as HTML
+Completed 404 Not Found in 1ms (ActiveRecord: 0.0ms | Allocations: 603)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User without an ID):
+  
+app/controllers/users_controller.rb:4:in `show'
+Started GET "/users/2" for ::1 at 2022-05-21 22:48:54 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 154)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 16.2ms | Allocations: 4029)
+Completed 200 OK in 20ms (Views: 17.1ms | ActiveRecord: 0.2ms | Allocations: 4832)
+
+
+Started DELETE "/sessions/2" for ::1 at 2022-05-21 22:48:58 +0900
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"2"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 276)
+
+
+Started GET "/" for ::1 at 2022-05-21 22:48:58 +0900
+Processing by UsersController#show as HTML
+Completed 404 Not Found in 1ms (ActiveRecord: 0.0ms | Allocations: 603)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User without an ID):
+  
+app/controllers/users_controller.rb:4:in `show'
+Started GET "/users/2" for ::1 at 2022-05-21 22:49:14 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 1307)
+  Rendered layout layouts/application.html.erb (Duration: 1.3ms | Allocations: 1377)
+Completed 500 Internal Server Error in 3ms (Allocations: 1875)
+
+
+  
+ActionView::Template::Error (undefined method `name' for nil:NilClass):
+    1: <h1>一覧ページ</h1>
+    2: <%= @user.name%>
+    3: <%= link_to "ログアウト",session_path, method: :delete, class:"logout" %>
+    4: <%= link_to '新規作成', new_user_path, class: 'new_user' %>
+  
+app/views/users/show.html.erb:2
+Started GET "/users/2" for ::1 at 2022-05-21 22:49:25 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/users_controller.rb:4:in `show'
+  [1m[36mUser Load (5.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 162)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 22.6ms | Allocations: 4042)
+Completed 200 OK in 63ms (Views: 24.4ms | ActiveRecord: 7.6ms | Allocations: 9668)
+
+
+Started DELETE "/sessions/2" for ::1 at 2022-05-21 22:49:30 +0900
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"2"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 281)
+
+
+Started GET "/" for ::1 at 2022-05-21 22:49:30 +0900
+Processing by UsersController#show as HTML
+Completed 404 Not Found in 1ms (ActiveRecord: 0.0ms | Allocations: 603)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User without an ID):
+  
+app/controllers/users_controller.rb:4:in `show'
+Started DELETE "/sessions/2" for ::1 at 2022-05-21 22:53:37 +0900
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"2"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 276)
+
+
+Started GET "/" for ::1 at 2022-05-21 22:53:37 +0900
+Processing by UsersController#show as HTML
+Completed 404 Not Found in 2ms (ActiveRecord: 0.0ms | Allocations: 603)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User without an ID):
+  
+app/controllers/users_controller.rb:4:in `show'
+Started GET "/users/new" for ::1 at 2022-05-21 22:54:11 +0900
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 9.6ms | Allocations: 1598)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 41.4ms | Allocations: 5670)
+Completed 200 OK in 54ms (Views: 49.8ms | ActiveRecord: 0.0ms | Allocations: 6806)
+
+
+Started DELETE "/sessions/2" for ::1 at 2022-05-21 22:56:57 +0900
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"2"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (Allocations: 276)
+
+
+Started GET "/" for ::1 at 2022-05-21 22:56:57 +0900
+Processing by UsersController#show as HTML
+Completed 404 Not Found in 1ms (Allocations: 603)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User without an ID):
+  
+app/controllers/users_controller.rb:4:in `show'
+Started GET "/" for ::1 at 2022-05-21 23:00:06 +0900
+Processing by UsersController#show as HTML
+Completed 404 Not Found in 1ms (Allocations: 603)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User without an ID):
+  
+app/controllers/users_controller.rb:4:in `show'
+Started GET "/" for ::1 at 2022-05-21 23:00:33 +0900
+Processing by UsersController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 1117)
+  Rendered layout layouts/application.html.erb (Duration: 1.3ms | Allocations: 1187)
+Completed 500 Internal Server Error in 33ms (Allocations: 2292)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"destroy", :controller=>"sessions"}, missing required keys: [:id]):
+    1: <h1>一覧ページ</h1>
+    2: <%= link_to "ログアウト", session_path, method: :delete, class:"logout" %>
+    3: <%= link_to '新規作成', new_user_path, class: 'new_user' %>
+  
+app/views/users/show.html.erb:2
+Started GET "/" for ::1 at 2022-05-21 23:01:12 +0900
+Processing by UsersController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1137)
+  Rendered layout layouts/application.html.erb (Duration: 2.0ms | Allocations: 1207)
+Completed 500 Internal Server Error in 9ms (Allocations: 2306)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"destroy", :controller=>"sessions", :id=>nil}, missing required keys: [:id]):
+    1: <h1>一覧ページ</h1>
+    2: <%= link_to "ログアウト", session_path(@current_user), method: :delete, class:"logout" %>
+    3: <%= link_to '新規作成', new_user_path, class: 'new_user' %>
+  
+app/views/users/show.html.erb:2
+Started GET "/sessions/2" for ::1 at 2022-05-21 23:33:53 +0900
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/sessions/2"):
+  
+Started DELETE "/sessions/2" for ::1 at 2022-05-21 23:34:01 +0900
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"2"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 19ms (ActiveRecord: 0.0ms | Allocations: 1226)
+
+
+Started GET "/" for ::1 at 2022-05-21 23:34:01 +0900
+Processing by UsersController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1146)
+  Rendered layout layouts/application.html.erb (Duration: 3.3ms | Allocations: 1218)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms | Allocations: 2377)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"destroy", :controller=>"sessions"}, missing required keys: [:id]):
+    1: <h1>一覧ページ</h1>
+    2: <%= link_to "ログアウト", session_path, method: :delete, class:"logout" %>
+    3: <%= link_to '新規作成', new_user_path, class: 'new_user' %>
+  
+app/views/users/show.html.erb:2
+Started GET "/users/2" for ::1 at 2022-05-21 23:34:07 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 157)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 54.3ms | Allocations: 6674)
+Completed 200 OK in 58ms (Views: 56.1ms | ActiveRecord: 0.0ms | Allocations: 7059)
+
+
+Started DELETE "/sessions/2" for ::1 at 2022-05-21 23:34:11 +0900
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"2"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 277)
+
+
+Started GET "/" for ::1 at 2022-05-21 23:34:11 +0900
+Processing by UsersController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 1019)
+  Rendered layout layouts/application.html.erb (Duration: 0.9ms | Allocations: 1090)
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 1446)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"destroy", :controller=>"sessions"}, missing required keys: [:id]):
+    1: <h1>一覧ページ</h1>
+    2: <%= link_to "ログアウト", session_path, method: :delete, class:"logout" %>
+    3: <%= link_to '新規作成', new_user_path, class: 'new_user' %>
+  
+app/views/users/show.html.erb:2
+Started GET "/users/2" for ::1 at 2022-05-21 23:39:32 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 1.3ms | Allocations: 255)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 20.8ms | Allocations: 4347)
+Completed 200 OK in 26ms (Views: 23.5ms | ActiveRecord: 0.0ms | Allocations: 5467)
+
+
+Started DELETE "/sessions/2" for ::1 at 2022-05-21 23:39:36 +0900
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"2"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 276)
+
+
+Started GET "/" for ::1 at 2022-05-21 23:39:36 +0900
+Processing by UsersController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 1.2ms | Allocations: 1019)
+  Rendered layout layouts/application.html.erb (Duration: 2.0ms | Allocations: 1089)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 1443)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"destroy", :controller=>"sessions"}, missing required keys: [:id]):
+    1: <h1>一覧ページ</h1>
+    2: <%= link_to "ログアウト", session_path, method: :delete %>
+    3: <%= link_to '新規作成', new_user_path, class: 'new_user' %>
+  
+app/views/users/show.html.erb:2
+Started GET "/" for ::1 at 2022-05-21 23:42:28 +0900
+Processing by UsersController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1130)
+  Rendered layout layouts/application.html.erb (Duration: 1.9ms | Allocations: 1201)
+Completed 500 Internal Server Error in 8ms (Allocations: 2304)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"destroy", :controller=>"sessions"}, missing required keys: [:id]):
+    1: <h1>一覧ページ</h1>
+    2: <%= link_to 'ログアウト', session_path, method: :delete %>
+    3: <%= link_to '新規作成', new_user_path, class: 'new_user' %>
+  
+app/views/users/show.html.erb:2
+Started DELETE "/sessions/2" for ::1 at 2022-05-21 23:42:34 +0900
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"2"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (Allocations: 276)
+
+
+Started GET "/" for ::1 at 2022-05-21 23:42:34 +0900
+Processing by UsersController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 1016)
+  Rendered layout layouts/application.html.erb (Duration: 1.0ms | Allocations: 1086)
+Completed 500 Internal Server Error in 2ms (Allocations: 1440)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"destroy", :controller=>"sessions"}, missing required keys: [:id]):
+    1: <h1>一覧ページ</h1>
+    2: <%= link_to 'ログアウト', session_path, method: :delete %>
+    3: <%= link_to '新規作成', new_user_path, class: 'new_user' %>
+  
+app/views/users/show.html.erb:2
+Started DELETE "/sessions/2" for ::1 at 2022-05-21 23:44:40 +0900
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"2"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (Allocations: 276)
+
+
+Started GET "/" for ::1 at 2022-05-21 23:44:40 +0900
+Processing by UsersController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 1.2ms | Allocations: 1016)
+  Rendered layout layouts/application.html.erb (Duration: 1.7ms | Allocations: 1086)
+Completed 500 Internal Server Error in 4ms (Allocations: 1439)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"destroy", :controller=>"sessions"}, missing required keys: [:id]):
+    1: <h1>一覧ページ</h1>
+    2: <%= link_to 'ログアウト', session_path, method: :delete %>
+    3: <%= link_to '新規作成', new_user_path, class: 'new_user' %>
+  
+app/views/users/show.html.erb:2
+Started GET "/users/new" for ::1 at 2022-05-21 23:44:51 +0900
+Processing by UsersController#new as HTML
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/users_controller.rb:7:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 22.6ms | Allocations: 3490)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 41.0ms | Allocations: 7505)
+Completed 200 OK in 95ms (Views: 41.8ms | ActiveRecord: 1.5ms | Allocations: 17973)
+
+
+Started GET "/users/login" for ::1 at 2022-05-21 23:44:58 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"login"}
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 145)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.2ms | Allocations: 4020)
+Completed 200 OK in 15ms (Views: 13.6ms | ActiveRecord: 0.0ms | Allocations: 4395)
+
+
+Started GET "/sessions/new" for ::1 at 2022-05-21 23:45:45 +0900
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 29.1ms | Allocations: 2429)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 42.1ms | Allocations: 6189)
+Completed 200 OK in 47ms (Views: 46.1ms | ActiveRecord: 0.0ms | Allocations: 7060)
+
+
+Started POST "/sessions" for ::1 at 2022-05-21 23:45:49 +0900
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"foobar@gmail.com", "password"=>"[FILTERED]", "commit"=>"ログイン"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "foobar@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:4:in `create'
+Redirected to http://localhost:3000/users/2
+Completed 302 Found in 273ms (ActiveRecord: 0.7ms | Allocations: 5944)
+
+
+Started GET "/users/2" for ::1 at 2022-05-21 23:45:49 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 145)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.4ms | Allocations: 4023)
+Completed 200 OK in 7ms (Views: 6.9ms | ActiveRecord: 0.0ms | Allocations: 4400)
+
+
+Started DELETE "/sessions/2" for ::1 at 2022-05-21 23:45:54 +0900
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"2"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 277)
+
+
+Started GET "/" for ::1 at 2022-05-21 23:45:54 +0900
+Processing by UsersController#show as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 1016)
+  Rendered layout layouts/application.html.erb (Duration: 1.3ms | Allocations: 1086)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 1439)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"destroy", :controller=>"sessions"}, missing required keys: [:id]):
+    1: <h1>一覧ページ</h1>
+    2: <%= link_to 'ログアウト', session_path, method: :delete %>
+    3: <%= link_to '新規作成', new_user_path, class: 'new_user' %>
+  
+app/views/users/show.html.erb:2
+Started GET "/users/2" for ::1 at 2022-05-21 23:46:34 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/users_controller.rb:4:in `show'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 149)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.7ms | Allocations: 4006)
+Completed 200 OK in 29ms (Views: 12.0ms | ActiveRecord: 2.3ms | Allocations: 9622)
+
+
+Started DELETE "/sessions/2" for ::1 at 2022-05-21 23:46:37 +0900
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"2"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 281)
+
+
+Started GET "/" for ::1 at 2022-05-21 23:46:37 +0900
+Processing by UsersController#show as HTML
+Completed 404 Not Found in 1ms (ActiveRecord: 0.0ms | Allocations: 607)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User without an ID):
+  
+app/controllers/users_controller.rb:4:in `show'
+Started GET "/users/2" for ::1 at 2022-05-21 23:47:45 +0900
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/users_controller.rb:4:in `show'
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 264)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.8ms | Allocations: 4323)
+Completed 200 OK in 29ms (Views: 14.8ms | ActiveRecord: 1.5ms | Allocations: 10553)
+
+
+Started DELETE "/sessions/2" for ::1 at 2022-05-21 23:47:48 +0900
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"2"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 281)
+
+
+Started GET "/" for ::1 at 2022-05-21 23:47:48 +0900
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered users/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 93)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 13.6ms | Allocations: 3940)
+Completed 200 OK in 17ms (Views: 14.7ms | ActiveRecord: 0.0ms | Allocations: 4419)
+
+
